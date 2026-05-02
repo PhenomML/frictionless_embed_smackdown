@@ -1,0 +1,8 @@
+| dataset_id     | dataset_name   | modality   |   n_samples |   max_points_used |   input_dim | label_type   |   known_k0 | main_role           | preprocessing_repr                            |   notes |
+|:---------------|:---------------|:-----------|------------:|------------------:|------------:|:-------------|-----------:|:--------------------|:----------------------------------------------|--------:|
+| 20newsgroups   | 20 Newsgroups  | text       |         nan |             18846 |        2000 | ground_truth |         20 | tuning_anchor       | TF-IDF(max_features=2000) -> TruncatedSVD->50 |     nan |
+| ag_news        | AG News        | text       |         nan |              5000 |         nan | ground_truth |          4 | text_regime         | nan                                           |     nan |
+| cifar10        | CIFAR-10       | image      |         nan |              5000 |         512 | ground_truth |         10 | stable_not_truthful | ResNet18 penultimate layer -> PCA->50         |     nan |
+| mnist          | MNIST          | image      |         nan |              5000 |         784 | ground_truth |         10 | easy_regime         | flatten -> PCA->50                            |     nan |
+| olivetti_faces | Olivetti Faces | image      |         nan |               400 |         nan | ground_truth |         40 | tuning_anchor       | nan                                           |     nan |
+| uci_har        | UCI HAR        | sensor     |         nan |              5000 |         nan | ground_truth |          6 | easy_regime         | nan                                           |     nan |

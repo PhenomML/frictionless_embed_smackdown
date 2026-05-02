@@ -1,0 +1,5 @@
+dataset,control,median_p_value,frac_p_le_0p05,K_BH,max_T_minus_q95
+AG News,random 2D control,0.19900497512437812,0.0,,-5.284100302508587e-06
+AG News,shuffled-feature control,0.527363184079602,0.14285714285714285,,1.0699003334544379e-05
+MNIST,random 2D control,0.19900497512437812,0.0,,-5.284100302508587e-06
+MNIST,shuffled-feature control,0.4975124378109453,0.0,,-7.899668292454206e-06

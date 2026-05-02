@@ -1,0 +1,7 @@
+dataset_id,dataset_name,display_random_state,max_points,tsne_perplexity,umap_n_neighbors,alignment_reference,alignment_note
+mnist,MNIST,123,3000,30.0,15,MDS,t-SNE and UMAP aligned to MDS for display only
+uci_har,UCI HAR,123,3000,30.0,15,MDS,t-SNE and UMAP aligned to MDS for display only
+cifar10,CIFAR-10,123,3000,30.0,15,MDS,t-SNE and UMAP aligned to MDS for display only
+ag_news,AG News,123,3000,30.0,15,MDS,t-SNE and UMAP aligned to MDS for display only
+olivetti_faces,Olivetti Faces,123,3000,30.0,15,MDS,t-SNE and UMAP aligned to MDS for display only
+20newsgroups,20 Newsgroups,123,3000,30.0,15,MDS,t-SNE and UMAP aligned to MDS for display only

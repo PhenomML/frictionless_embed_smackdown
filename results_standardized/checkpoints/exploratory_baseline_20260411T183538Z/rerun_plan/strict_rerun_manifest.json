@@ -1,0 +1,61 @@
+{
+  "triage_csv": "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/protocol_triage.csv",
+  "priority_filter": "high",
+  "strict_protocol": {
+    "b": 200,
+    "pairs": 2000,
+    "n_null": 200,
+    "max_points": 5000,
+    "tau": 200,
+    "min_pairs_m": 1000,
+    "seed": 123
+  },
+  "parameter_policy": "global_cli_override",
+  "triage_recommendations_used": false,
+  "group_count": 4,
+  "k_sweep_command_count": 2,
+  "fixed_k0_command_count": 0,
+  "no_reruns_needed": false,
+  "k_sweep_commands": [
+    "python scripts/run_k_sweep_replicability.py --datasets ag_news --methods tsne umap --metric ami --b 200 --pairs-per-k 2000 --max-points 5000 --n-null 200 --alpha 0.05 --z-star 2.0 --seed 123 --output-dir outputs/strict_reruns/replicability_benchmark_ami/dataset_ag_news",
+    "python scripts/run_k_sweep_replicability.py --datasets cifar10 --methods tsne umap --metric ami --b 200 --pairs-per-k 2000 --max-points 5000 --n-null 200 --alpha 0.05 --z-star 2.0 --seed 123 --output-dir outputs/strict_reruns/replicability_benchmark_ami/dataset_cifar10"
+  ],
+  "fixed_k0_commands": [],
+  "affected_groups_by_table_family": {
+    "k_sweep": [
+      {
+        "dataset_id": "ag_news",
+        "method": "tsne",
+        "metric": "ami",
+        "rerun_priority": "high",
+        "strict_failure_reason": "low_b|low_pairs|low_n_points"
+      },
+      {
+        "dataset_id": "ag_news",
+        "method": "umap",
+        "metric": "ami",
+        "rerun_priority": "high",
+        "strict_failure_reason": "low_b|low_pairs|low_n_points"
+      },
+      {
+        "dataset_id": "cifar10",
+        "method": "tsne",
+        "metric": "ami",
+        "rerun_priority": "high",
+        "strict_failure_reason": "low_b|low_pairs|low_n_points"
+      },
+      {
+        "dataset_id": "cifar10",
+        "method": "umap",
+        "metric": "ami",
+        "rerun_priority": "high",
+        "strict_failure_reason": "low_b|low_pairs|low_n_points"
+      }
+    ],
+    "fixed_k0": []
+  },
+  "outputs": {
+    "shell_script": "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/rerun_plan/strict_rerun_commands.sh",
+    "checklist": "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/rerun_plan/strict_rerun_checklist.md"
+  }
+}

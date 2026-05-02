@@ -1,0 +1,5 @@
+dataset_id,method,metric,scenario,scenario_type,n_k,uncorrected_rejections_at_alpha_0p05,K_BH,median_p_value,frac_p_le_0p05,max_T_minus_q95,fraction,b,pairs_per_k,n_null,max_points,seed
+ag_news,umap,ami,rand2d_per_replicate,negative_control,7,0,,0.19900497512437812,0.0,-5.284100302508587e-06,0.8,80,1200,200,3000,123
+ag_news,umap,ami,shuffled_features_per_replicate,negative_control,7,1,,0.527363184079602,0.14285714285714285,1.0699003334544379e-05,0.8,80,1200,200,3000,123
+mnist,umap,ami,rand2d_per_replicate,negative_control,7,0,,0.19900497512437812,0.0,-5.284100302508587e-06,0.8,80,1200,200,3000,123
+mnist,umap,ami,shuffled_features_per_replicate,negative_control,7,0,,0.4975124378109453,0.0,-7.899668292454206e-06,0.8,80,1200,200,3000,123

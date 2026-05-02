@@ -1,0 +1,88 @@
+{
+  "timestamp": "2026-04-23T09:05:13.120190Z",
+  "python_executable": "/opt/anaconda3/bin/python",
+  "strict_mode": false,
+  "source_tables": [
+    "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/k_sweep_summary_long.csv",
+    "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/fixed_k0_summary_long.csv",
+    "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/fixed_k0_alignment_summary.csv",
+    "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/same_numeric_comparison.csv",
+    "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/cross_design_comparison.csv",
+    "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/dataset_inventory.csv",
+    "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/protocol_inventory.csv",
+    "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/protocol_triage.csv"
+  ],
+  "control_source_tables": [
+    "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/controls/null_calibration_curves.csv",
+    "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/controls/null_calibration_summary.csv",
+    "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/controls/negative_control_curves.csv",
+    "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/controls/negative_control_summary.csv",
+    "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/controls/gamma_sensitivity_curves.csv",
+    "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/controls/gamma_sensitivity_summary.csv",
+    "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/controls/pair_subsampling_curves.csv",
+    "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/controls/pair_subsampling_summary.csv"
+  ],
+  "refresh_commands": [],
+  "strict_readiness": {
+    "ready_to_plot_strict_core": false,
+    "non_strict_group_count": 11,
+    "high_priority_non_strict_group_count": 4
+  },
+  "exploratory_baseline": {
+    "checkpoint_dir": "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/checkpoints/exploratory_baseline_20260423T084543Z",
+    "preserved_files": [
+      "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/fixed_k0_summary_long.csv",
+      "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/k_sweep_summary_long.csv",
+      "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/fixed_k0_alignment_summary.csv",
+      "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/same_numeric_comparison.csv",
+      "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/cross_design_comparison.csv",
+      "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/dataset_inventory.csv",
+      "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/protocol_inventory.csv",
+      "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/k_sweep_summary_long_strict.csv",
+      "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/fixed_k0_summary_long_strict.csv",
+      "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/protocol_triage.csv",
+      "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/rerun_plan/strict_rerun_commands.sh",
+      "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/rerun_plan/strict_rerun_checklist.md",
+      "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/rerun_plan/strict_rerun_manifest.json"
+    ],
+    "missing_files": []
+  },
+  "provenance": {
+    "used_existing_standardized_outputs": true,
+    "strict_reruns_executed": false
+  },
+  "merged_sources": {
+    "fixed_k0": "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/outputs/strict_reruns/merged_fixed_k0_source.csv",
+    "k_sweep": "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/outputs/strict_reruns/merged_k_sweep_source.csv",
+    "merge_manifest": "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/outputs/strict_reruns/merge_manifest.json"
+  },
+  "robustness_outputs": {
+    "figA": [
+      "figA_protocol_schematic.png",
+      "figA_protocol_schematic.pdf"
+    ],
+    "figB": [
+      "figB_null_calibration.png",
+      "figB_null_calibration.pdf"
+    ],
+    "figC": [
+      "figC_negative_control.png",
+      "figC_negative_control.pdf"
+    ],
+    "figD": [
+      "figD_gamma_sensitivity.png",
+      "figD_gamma_sensitivity.pdf"
+    ],
+    "figE": [
+      "figE_pair_subsampling_convergence.png",
+      "figE_pair_subsampling_convergence.pdf"
+    ],
+    "tableB": "tableB_null_calibration_summary.csv",
+    "tableD": "tableD_gamma_sensitivity_summary.csv",
+    "tableE": "tableE_pair_subsampling_summary.csv"
+  },
+  "tables_dir": "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/paper_artifacts/tables",
+  "figures_dir": "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/paper_artifacts/figures",
+  "paper_tables_dir": "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/paper_artifacts/tables",
+  "paper_figures_dir": "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/paper_artifacts/figures"
+}

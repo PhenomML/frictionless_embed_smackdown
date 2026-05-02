@@ -1,0 +1,27 @@
+{
+  "heatmap_summary_csv": "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/paper_artifacts/tables/table3_all6_ami_summary.csv",
+  "boxplot_long_csv": null,
+  "pair_subsampling_csv": null,
+  "pair_subsampling_summary_csv": null,
+  "k_sweep_long_csv": "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/k_sweep_summary_long.csv",
+  "fixed_k0_summary_csv": "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/fixed_k0_summary_long.csv",
+  "fixed_k0_alignment_csv": "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/fixed_k0_alignment_summary.csv",
+  "metric_summary_source_csv": "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/fixed_k0_alignment_summary.csv",
+  "control_pvalues_csv": "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/controls/replicatewise_control_curves.csv",
+  "control_curves_csv": "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/controls/replicatewise_control_curves.csv",
+  "negative_control_curves_csv": "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/results_standardized/controls/replicatewise_control_curves.csv",
+  "built": {
+    "fig5_fixedk0_ari_raw_frontier": "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/paper_artifacts/figures/fig5_fixedk0_ari_raw_frontier.png",
+    "fig6_fixedk0_ari_profiles": "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/paper_artifacts/figures/fig6_fixedk0_ari_profiles.png",
+    "fig_fixedk0_jaccard_raw_frontier": "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/paper_artifacts/figures/fig_fixedk0_jaccard_raw_frontier.png",
+    "fig6_fixedk0_jaccard_profiles": "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/paper_artifacts/figures/fig6_fixedk0_jaccard_profiles.png",
+    "fig7_fixedk0_ami_raw_frontier": "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/paper_artifacts/figures/fig7_fixedk0_ami_raw_frontier.png",
+    "fig8_fixedk0_ami_profiles": "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/paper_artifacts/figures/fig8_fixedk0_ami_profiles.png",
+    "fig9_metric_summary": "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/paper_artifacts/figures/fig9_metric_summary.png",
+    "pair_subsampling_sensitivity": "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/paper_artifacts/figures/pair_subsampling_sensitivity.png",
+    "tableE_pair_subsampling_metric_stability_summary": "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/paper_artifacts/tables/tableE_pair_subsampling_metric_stability_summary.csv",
+    "figB_control_diagnostics_replicatewise": "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/paper_artifacts/figures/figB_control_diagnostics_replicatewise.png",
+    "figC_replicability_under_semantically_weak_controls": "/Users/aqibsyed/Documents/Research/Clustering/Benchmarking/paper_artifacts/figures/figC_replicability_under_semantically_weak_controls.png"
+  },
+  "skipped": {}
+}

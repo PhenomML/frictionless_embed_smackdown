@@ -1,0 +1,10 @@
+\begin{tabular}{lrrlrrlrrrlllrrlrl}
+\toprule
+protocol_id & B & subsample_frac & clustering_algo & clustering_restarts & embedding_recomputed_per_replicate & pair_sampling_rule & pairs_target & null_trials & alpha_bh & tsne_grid & umap_grid & k_grid & protocol_assumption & group_protocol_uniform_rate & compute_tier_mode & n_groups & remarks \\
+\midrule
+fixed_k0_new_only & 200 & 0.8000 & kmeans & 10 & False & sampled_replicate_pairs_with_min_overlap & 2000 &  & 0.0500 & [5.0, 10.0, 15.0, 30.0, 50.0, 100.0] & [5.0, 10.0, 15.0, 30.0, 50.0, 100.0] & [] & True & 1.0000 & nominal & 24 & Assumed from current pipeline defaults; verify against run scripts before publication \\
+fixed_k0_old_baseline & 200 & 0.8000 & kmeans & 10 & False & sampled_replicate_pairs_with_min_overlap & 2000 &  & 0.0500 & [5.0, 10.0, 15.0, 30.0, 50.0, 100.0] & [5.0, 10.0, 15.0, 30.0, 50.0, 100.0] & [] & True & 1.0000 & nominal & 12 & Assumed from current pipeline defaults; verify against run scripts before publication \\
+k_sweep_new_only & 200 & 0.8000 & kmeans & 10 & False & sampled_replicate_pairs_with_min_overlap & 2000 & 200.0000 & 0.0500 & [] & [] & [2, 3, 4, 5, 6, 8, 10, 12, 15, 20, 25, 30, 40] & True & 1.0000 & nominal & 24 & Assumed from current pipeline defaults; verify against run scripts before publication \\
+k_sweep_old_baseline & 200 & 0.8000 & kmeans & 10 & False & sampled_replicate_pairs_with_min_overlap & 2000 & 200.0000 & 0.0500 & [] & [] & [2, 3, 5, 8, 10, 15, 20, 25, 30, 40] & True & 1.0000 & nominal & 12 & Assumed from current pipeline defaults; verify against run scripts before publication \\
+\bottomrule
+\end{tabular}

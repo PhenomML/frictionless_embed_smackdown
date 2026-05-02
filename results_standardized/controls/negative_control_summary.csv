@@ -1,0 +1,5 @@
+dataset_id,method,metric,scenario,scenario_type,uncorrected_rejections_at_alpha_0p05,frac_p_le_0p05,K_BH,max_gap_T_minus_q95,mean_gap_T_minus_q95,b,fraction,pairs_per_k,n_null,max_points,seed
+mnist,umap,ami,rand2d_embedding,negative_control,7,1.0,20,0.7814140377154373,0.7296516797411569,80,0.8,1200,200,3000,123
+mnist,umap,ami,shuffled_features_embedding,negative_control,7,1.0,20,0.9541616148038486,0.8913692740050363,80,0.8,1200,200,3000,123
+ag_news,umap,ami,rand2d_embedding,negative_control,7,1.0,20,0.797810287091676,0.7336623281059722,80,0.8,1200,200,3000,123
+ag_news,umap,ami,shuffled_features_embedding,negative_control,7,1.0,20,0.8895413511256176,0.8322730877814228,80,0.8,1200,200,3000,123

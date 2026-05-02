@@ -1,0 +1,8 @@
+{
+  "name": "CIFAR-10",
+  "modality": "image embeddings (ResNet-18)",
+  "original_dim": 512,
+  "preprocessing": ["ResNet18 penultimate layer", "PCA->50"],
+  "label_type": "ground_truth",
+  "class_names": ["airplane", "automobile", "bird", "cat", "dog", "deer", "frog", "horse", "ship", "truck"]
+}

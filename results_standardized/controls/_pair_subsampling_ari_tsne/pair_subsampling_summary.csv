@@ -1,0 +1,9 @@
+dataset_id,method,metric,M_pairs,delta_max_abs_median,delta_pass,mean_eligible_pairs,m_min_fixed,k_range_json,n_k,n_replicates,scenario_type,b,R,pairs_pool_size,delta_threshold,max_points,seed
+20newsgroups,tsne,ari,250,0.02474300544057484,False,100.75,1922,"[2, 3, 5, 8, 10, 15, 20]",7,4,pair_subsampling_convergence,120,4,5000,0.02,3000,123
+20newsgroups,tsne,ari,500,0.013230689413325891,True,213.25,1922,"[2, 3, 5, 8, 10, 15, 20]",7,4,pair_subsampling_convergence,120,4,5000,0.02,3000,123
+20newsgroups,tsne,ari,1000,0.010516356660512871,True,418.75,1922,"[2, 3, 5, 8, 10, 15, 20]",7,4,pair_subsampling_convergence,120,4,5000,0.02,3000,123
+20newsgroups,tsne,ari,2000,0.009946046521242091,True,845.0,1922,"[2, 3, 5, 8, 10, 15, 20]",7,4,pair_subsampling_convergence,120,4,5000,0.02,3000,123
+olivetti_faces,tsne,ari,250,0.013875296623809985,True,110.25,257,"[2, 3, 5, 8, 10, 15, 20]",7,4,pair_subsampling_convergence,120,4,5000,0.02,3000,123
+olivetti_faces,tsne,ari,500,0.0130192510112494,True,208.75,257,"[2, 3, 5, 8, 10, 15, 20]",7,4,pair_subsampling_convergence,120,4,5000,0.02,3000,123
+olivetti_faces,tsne,ari,1000,0.009931787234107925,True,423.75,257,"[2, 3, 5, 8, 10, 15, 20]",7,4,pair_subsampling_convergence,120,4,5000,0.02,3000,123
+olivetti_faces,tsne,ari,2000,0.005109131237218678,True,867.5,257,"[2, 3, 5, 8, 10, 15, 20]",7,4,pair_subsampling_convergence,120,4,5000,0.02,3000,123

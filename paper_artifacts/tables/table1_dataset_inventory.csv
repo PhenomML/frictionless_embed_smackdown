@@ -1,0 +1,7 @@
+dataset_id,dataset_name,modality,n_samples,max_points_used,input_dim,label_type,known_k0,main_role,preprocessing_repr,notes
+20newsgroups,20 Newsgroups,text,,18846,2000.0,ground_truth,20,tuning_anchor,TF-IDF(max_features=2000) -> TruncatedSVD->50,
+ag_news,AG News,text,,5000,,ground_truth,4,text_regime,,
+cifar10,CIFAR-10,image,,5000,512.0,ground_truth,10,stable_not_truthful,ResNet18 penultimate layer -> PCA->50,
+mnist,MNIST,image,,5000,784.0,ground_truth,10,easy_regime,flatten -> PCA->50,
+olivetti_faces,Olivetti Faces,image,,400,,ground_truth,40,tuning_anchor,,
+uci_har,UCI HAR,sensor,,5000,,ground_truth,6,easy_regime,,

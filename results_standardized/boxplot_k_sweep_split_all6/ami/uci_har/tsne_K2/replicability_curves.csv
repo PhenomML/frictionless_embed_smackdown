@@ -1,0 +1,2 @@
+dataset_id,method,metric,k,rep_mean,rep_std,q10,pairs_used,null_mu0,null_sigma0,z_score,p_value,null_q025,null_q975,null_q95,k_eff_mean,min_size_mean,n_small_2_mean,metric_vs_gt_mean,metric_vs_gt_std,ari_vs_gt_mean,ari_vs_gt_std,ami_vs_gt_mean,ami_vs_gt_std
+uci_har,tsne,ami,2,1.0,0.0,1.0,1003,-1.9205969890501696e-07,1.0247023046043168e-05,97589.33766093593,0.004975124378109453,-1.911082409081939e-05,2.0397736477143808e-05,1.542478152014956e-05,1.9831768891832462,1815.795,0.0,0.5553845236301719,0.0006056756001375424,,,,
