@@ -4,6 +4,7 @@ import shutil
 from pathlib import Path
 
 import pandas as pd
+import matplotlib.pyplot as plt
 from matplotlib.figure import Figure
 
 
@@ -33,9 +34,12 @@ def first_existing_path(candidates: list[Path | str | None]) -> Path | None:
 def save_figure_png_pdf(fig: Figure, figures_dir: Path, filename: str) -> Path:
     figures_dir.mkdir(parents=True, exist_ok=True)
     out = figures_dir / filename
-    fig.savefig(out, bbox_inches="tight")
-    if out.suffix.lower() == ".png":
-        fig.savefig(out.with_suffix(".pdf"), bbox_inches="tight")
+    try:
+        fig.savefig(out, bbox_inches="tight")
+        if out.suffix.lower() == ".png":
+            fig.savefig(out.with_suffix(".pdf"), bbox_inches="tight")
+    finally:
+        plt.close(fig)
     return out
 
 
