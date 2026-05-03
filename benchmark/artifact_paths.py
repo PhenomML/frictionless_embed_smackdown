@@ -50,7 +50,7 @@ class PaperArtifactPaths:
         """Default figure/table inputs matching the former plotting notebook."""
         return {
             "heatmap_summary_csv": self.tables_dir / "table3_all6_ami_summary.csv",
-            "boxplot_long_csv": None,
+            "boxplot_long_csv": self.controls_dir / "pairwise_boxplot_long.csv",
             "pair_subsampling_csv": None,
             "pair_subsampling_summary_csv": None,
             "k_sweep_long_csv": self.results_dir / "k_sweep_summary_long.csv",

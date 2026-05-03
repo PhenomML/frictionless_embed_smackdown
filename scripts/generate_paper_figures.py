@@ -15,6 +15,11 @@ from benchmark.paper_figures import build_paper_artifacts
 
 
 valid_targets = {
+    "embedding_gallery",
+    "heatmap",
+    "k_sweep",
+    "boxplots",
+    "bh",
     "fixed_k0",
     "metric_summary",
     "pair_subsampling",

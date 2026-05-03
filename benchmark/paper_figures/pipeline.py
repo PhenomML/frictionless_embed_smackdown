@@ -11,8 +11,12 @@ from benchmark.paper_analysis import (
     build_pair_subsampling_metric_stability,
     load_pair_subsampling_summary,
 )
+from benchmark.paper_figures.bh import plot_bh_appendix_synthetic
+from benchmark.paper_figures.boxplots import plot_pairwise_boxplots
 from benchmark.paper_figures.controls import plot_control_diagnostics, plot_negative_control_delta
 from benchmark.paper_figures.fixed_k0 import build_fixed_k0_figures
+from benchmark.paper_figures.heatmaps import plot_all6_ami_heatmaps
+from benchmark.paper_figures.k_sweep import build_k_sweep_figures
 from benchmark.paper_figures.metric_summary import plot_metric_summary
 from benchmark.paper_figures.pair_subsampling import plot_pair_subsampling_sensitivity
 
@@ -64,6 +68,51 @@ def build_paper_artifacts(
         fixed_df = pd.read_csv(fixed_path)
     if align_path is not None and align_path.exists():
         align_df = pd.read_csv(align_path)
+
+    if wants("embedding_gallery"):
+        try:
+            from benchmark.paper_figures.embedding_gallery import plot_embedding_gallery
+
+            out = plot_embedding_gallery(paths.root, paths.figures_dir, paths.tables_dir)
+            built["fig1_embedding_gallery_main"] = str(out)
+        except Exception as exc:
+            skipped["embedding_gallery"] = str(exc)
+
+    if wants("heatmap"):
+        heatmap_path = Path(merged_overrides["heatmap_summary_csv"]) if merged_overrides.get("heatmap_summary_csv") else None
+        if heatmap_path is None or not heatmap_path.exists():
+            skipped["heatmap"] = f"missing heatmap_summary_csv: {heatmap_path}"
+        else:
+            out = plot_all6_ami_heatmaps(pd.read_csv(heatmap_path), paths.figures_dir)
+            built["fig2_all6_ami_heatmaps"] = str(out)
+
+    if wants("k_sweep"):
+        k_sweep_path = Path(merged_overrides["k_sweep_long_csv"]) if merged_overrides.get("k_sweep_long_csv") else None
+        if k_sweep_path is None or not k_sweep_path.exists():
+            skipped["k_sweep"] = f"missing k_sweep_long_csv: {k_sweep_path}"
+        else:
+            outputs = build_k_sweep_figures(pd.read_csv(k_sweep_path), paths.figures_dir)
+            built.update({key: str(value) for key, value in outputs.items()})
+
+    if wants("boxplots"):
+        boxplot_path = _resolve_input(
+            merged_overrides,
+            "boxplot_long_csv",
+            [
+                paths.controls_dir / "pairwise_boxplot_long.csv",
+                paths.results_dir / "pairwise_boxplot_long.csv",
+                paths.tables_dir / "pairwise_boxplot_long.csv",
+            ],
+        )
+        if boxplot_path is None or not boxplot_path.exists():
+            skipped["boxplots"] = "missing pairwise_boxplot_long.csv"
+        else:
+            outputs = plot_pairwise_boxplots(pd.read_csv(boxplot_path), paths.figures_dir)
+            built.update({key: str(value) for key, value in outputs.items()})
+
+    if wants("bh"):
+        out = plot_bh_appendix_synthetic(paths.figures_dir)
+        built["fig_bh_appendix_two_panel_synthetic"] = str(out)
 
     if wants("fixed_k0"):
         if fixed_df is None:
