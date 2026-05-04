@@ -64,14 +64,16 @@ Full reruns are expensive. The command sequence below is the intended shape of t
 ```bash
 python scripts/validate_paper_datasets.py
 
-python scripts/run_k_sweep_replicability.py \
-  --datasets mnist uci_har cifar10 ag_news 20newsgroups olivetti_faces \
-  --methods tsne umap \
-  --metric ami \
-  --b 200 \
-  --pairs-per-k 2000 \
-  --max-points 5000 \
-  --n-null 200
+for metric in ami ari jaccard; do
+  python scripts/run_k_sweep_replicability.py \
+    --datasets mnist uci_har cifar10 ag_news 20newsgroups olivetti_faces \
+    --methods tsne umap \
+    --metric "$metric" \
+    --b 200 \
+    --pairs-per-k 2000 \
+    --max-points 5000 \
+    --n-null 200
+done
 
 python scripts/run_fixed_k0_hyperparam_sweep.py \
   --datasets mnist uci_har cifar10 ag_news 20newsgroups olivetti_faces \
