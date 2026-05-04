@@ -97,8 +97,6 @@ python scripts/run_pair_subsampling_convergence.py \
 python scripts/generate_paper_figures.py --config configs/paper_reproduction.json
 ```
 
-For appendix robustness, repeat the relevant sweep or control scripts with `--metric ari` and `--metric jaccard` as needed.
-
 ## Sherlock
 
 This repo is not currently set up for Sherlock recompute. If we need full cluster reruns later, make a separate working copy or fork and add Sherlock-specific environment files, logs, and Slurm scripts there.
