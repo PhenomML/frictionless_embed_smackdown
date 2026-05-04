@@ -18,6 +18,7 @@ valid_targets = {
     "embedding_gallery",
     "heatmap",
     "k_sweep",
+    "appendix_rep_validity",
     "boxplots",
     "bh",
     "fixed_k0",

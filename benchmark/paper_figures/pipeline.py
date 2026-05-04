@@ -11,6 +11,7 @@ from benchmark.paper_analysis import (
     build_pair_subsampling_metric_stability,
     load_pair_subsampling_summary,
 )
+from benchmark.paper_figures.appendix_rep_validity import build_appendix_rep_validity_figures
 from benchmark.paper_figures.bh import plot_bh_appendix_synthetic
 from benchmark.paper_figures.boxplots import plot_pairwise_boxplots
 from benchmark.paper_figures.controls import plot_control_diagnostics, plot_negative_control_delta
@@ -93,6 +94,23 @@ def build_paper_artifacts(
         else:
             outputs = build_k_sweep_figures(pd.read_csv(k_sweep_path), paths.figures_dir)
             built.update({key: str(value) for key, value in outputs.items()})
+
+    if wants("appendix_rep_validity"):
+        k_sweep_path = Path(merged_overrides["k_sweep_long_csv"]) if merged_overrides.get("k_sweep_long_csv") else None
+        if k_sweep_path is None or not k_sweep_path.exists():
+            skipped["appendix_rep_validity"] = f"missing k_sweep_long_csv: {k_sweep_path}"
+        else:
+            outputs, summary, inventory = build_appendix_rep_validity_figures(
+                pd.read_csv(k_sweep_path),
+                paths.figures_dir,
+            )
+            built.update({key: str(value) for key, value in outputs.items()})
+            summary_path = paths.tables_dir / "appendix_rep_validity_metric_overlay_summary.csv"
+            inventory_path = paths.tables_dir / "appendix_rep_validity_k_inventory.csv"
+            summary.to_csv(summary_path, index=False)
+            inventory.to_csv(inventory_path, index=False)
+            built["appendix_rep_validity_metric_overlay_summary"] = str(summary_path)
+            built["appendix_rep_validity_k_inventory"] = str(inventory_path)
 
     if wants("boxplots"):
         boxplot_path = _resolve_input(
