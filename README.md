@@ -51,6 +51,15 @@ Then regenerate the paper-facing figures and tables from the standardized result
 python scripts/generate_paper_figures.py --config configs/paper_reproduction.json
 ```
 
+To regenerate only the appendix replicability/validity overlays:
+
+```bash
+python scripts/generate_paper_figures.py \
+  --config configs/paper_reproduction.json \
+  --only appendix_rep_validity \
+  --no-tex
+```
+
 The notebook version does the same thing:
 
 ```text
